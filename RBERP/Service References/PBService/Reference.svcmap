@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6de48c6d-e080-4642-a727-5ad394dba55a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeRegistrationService.xsd" MetadataType="Schema" ID="ffcc9c42-96ab-48f1-8e6a-1ddfaf70ff90" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmployeeRegistrationService.disco" MetadataType="Disco" ID="31135f3d-7229-4282-ad61-53d2544817c4" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?disco" />
+    <MetadataFile FileName="EmployeeRegistrationService1.xsd" MetadataType="Schema" ID="7b3de97f-1dc3-4764-926c-02bc210cf3cc" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeRegistrationService.wsdl" MetadataType="Wsdl" ID="0c0c11b9-b853-466f-90a2-c3ea2cbd2f80" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?wsdl" />
+    <MetadataFile FileName="EmployeeRegistrationService2.xsd" MetadataType="Schema" ID="3d02b02b-bf88-4d87-9b6d-dab685cbba53" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EmployeeRegistrationService3.xsd" MetadataType="Schema" ID="6e9fb484-373c-442a-8f27-d95f2d6dceee" SourceId="1" SourceUrl="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

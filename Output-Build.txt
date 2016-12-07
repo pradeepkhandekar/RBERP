@@ -1,0 +1,58 @@
+﻿1>------ Build started: Project: RBERP, Configuration: Release Any CPU ------
+1>D:\SourceCode\RBERP\RBERP\Bank_Master.aspx.cs(69,26,69,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Break_Master.aspx.cs(91,26,91,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\City_Master.aspx.cs(89,26,89,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Master.aspx.cs(148,26,148,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Master.aspx.cs(207,26,207,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\VerticalStatusLeadDetails.aspx.cs(41,30,41,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Team_Target_Form.aspx.cs(41,30,41,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Employee_Master.aspx.cs(168,26,168,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Forgot_Password.aspx.cs(36,9,36,54): warning CS0618: 'Page.RegisterStartupScript(string, string)' is obsolete: 'The recommended alternative is ClientScript.RegisterStartupScript(Type type, string key, string script). http://go.microsoft.com/fwlink/?linkid=14202'
+1>D:\SourceCode\RBERP\RBERP\Forgot_Password.aspx.cs(47,9,47,54): warning CS0618: 'Page.RegisterStartupScript(string, string)' is obsolete: 'The recommended alternative is ClientScript.RegisterStartupScript(Type type, string key, string script). http://go.microsoft.com/fwlink/?linkid=14202'
+1>D:\SourceCode\RBERP\RBERP\Employee_Master_Edit.aspx.cs(187,26,187,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Lead_status_Master.aspx.cs(79,26,79,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Menu_Edit.aspx.cs(50,26,50,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Menu_Edit.aspx.cs(148,26,148,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Menu_Edit.aspx.cs(183,26,183,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Source_Master.aspx.cs(53,30,53,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Source_Master.aspx.cs(65,30,65,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Product_Master.aspx.cs(80,26,80,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Profession_Master.aspx.cs(80,26,80,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Role_Master.aspx.cs(78,26,78,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\State_Master.aspx.cs(66,26,66,28): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Source_Master.aspx.cs(152,30,152,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\UserRights.aspx.cs(43,13,43,14): warning CS0219: The variable 'i' is assigned but its value is never used
+1>D:\SourceCode\RBERP\RBERP\Source_Master.aspx.cs(207,30,207,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Product_Mapping.aspx.cs(80,30,80,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Product_Mapping.aspx.cs(92,30,92,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Product_Mapping.aspx.cs(188,30,188,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Product_Mapping.aspx.cs(256,30,256,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\CustomerWebRequest.aspx.cs(111,30,111,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\CustomerWebRequest.aspx.cs(181,30,181,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Daily_Planning.aspx.cs(55,30,55,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Daily_Planning.aspx.cs(72,30,72,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Daily_Planning.aspx.cs(89,30,89,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Daily_Planning.aspx.cs(117,30,117,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Daily_Planning.aspx.cs(170,30,170,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Employee_List.aspx.cs(288,30,288,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\home.aspx.cs(93,30,93,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\ImportDataFrmXLS.aspx.cs(64,29,64,32): warning CS0219: The variable 'str' is assigned but its value is never used
+1>D:\SourceCode\RBERP\RBERP\BranchWiseStatusReport.aspx.cs(138,30,138,32): warning CS0168: The variable 'ex' is declared but never used
+1>D:\SourceCode\RBERP\RBERP\Bank_Master.aspx.cs(12,20,12,28): warning CS0169: The field 'Bank_Master.isactive' is never used
+1>D:\SourceCode\RBERP\RBERP\View_Dashboard_Detail.aspx.cs(13,30,13,45): warning CS0414: The field 'View_Dashboard_Detail.tot_no_files_pd' is assigned but its value is never used
+1>  RBERP -> D:\SourceCode\RBERP\RBERP\bin\RBERP.dll
+2>------ Publish started: Project: RBERP, Configuration: Release Any CPU ------
+2>Connecting to D:\Projects\Published-RBERP...
+2>Transformed Web.config using D:\SourceCode\RBERP\RBERP\Web.Release.config into obj\Release\TransformWebConfig\transformed\Web.config.
+2>Copying all files to temporary location below for package/publish:
+2>obj\Release\Package\PackageTmp.
+2>Publishing folder /...
+2>Publishing folder bin...
+2>Publishing folder bin/roslyn...
+2>Publishing folder Properties...
+2>Publishing folder Properties/DataSources...
+2>Publishing folder scripts...
+2>Web App was published successfully file:///D:/Projects/Published-RBERP
+2>
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========

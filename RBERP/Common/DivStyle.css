@@ -1,0 +1,80 @@
+﻿  .divTable
+        {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px;
+        }
+        .divTableHeader
+        {
+        }
+        .divHeaderCell
+        {
+            width: 100%;
+            text-align: center;
+            background-color: #0085C8;
+        }
+        
+        
+        .divRow
+        {
+            overflow: hidden;
+            border-top: 1px Solid;
+            padding-top: 10px;
+        }
+        .divCell
+        {
+            width: 50%;
+            float: left;
+            font-weight: bold;
+        }
+        .center
+        {
+            text-align: center;
+        }
+        h1
+        {
+            margin: 0px !important;
+            color: White !important;
+        }
+        
+        .hideControl
+        {
+            display: none;
+        }
+        
+        .drop-area
+        {
+            width: 100px;
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            float: left;
+            font-weight: bolder;
+            vertical-align: middle;
+            height: 20px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        #thumbnail img
+        {
+            width: 250px;
+            height: 180px;
+            margin: 5px;
+            border: solid 1px;
+        }
+        canvas
+        {
+            border: 1px solid red;
+        }
+        #txtSearch
+        {
+            height: 23px;
+            width: 156px;
+        }
+        
+            .right
+        {
+            text-align: right;
+        }

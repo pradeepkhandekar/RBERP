@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmployeeRegistrationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Landmark.Indirect.DataLogicLayer" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_AuthenticateEmployeeLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateEmployeeLogin" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_AuthenticateEmployeeLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateEmployeeLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_CreateLead_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLead" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_CreateLead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_InsertAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAppointment" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_InsertAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetAppointments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointments" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetAppointments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetCustomerBySearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerBySearch" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetCustomerBySearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerBySearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_Upload_Diary_Entry_InputMessage">
+    <wsdl:part name="parameters" element="tns:Upload_Diary_Entry" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_Upload_Diary_Entry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Upload_Diary_EntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_DownLoad_Diary_Entry_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoad_Diary_Entry" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_DownLoad_Diary_Entry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoad_Diary_EntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetLead_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLead" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeRegistrationServiceContract_GetLead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmployeeRegistrationServiceContract">
+    <wsdl:operation name="AuthenticateEmployeeLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/AuthenticateEmployeeLogin" message="tns:IEmployeeRegistrationServiceContract_AuthenticateEmployeeLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/AuthenticateEmployeeLoginResponse" message="tns:IEmployeeRegistrationServiceContract_AuthenticateEmployeeLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLead">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/CreateLead" message="tns:IEmployeeRegistrationServiceContract_CreateLead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/CreateLeadResponse" message="tns:IEmployeeRegistrationServiceContract_CreateLead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/InsertAppointment" message="tns:IEmployeeRegistrationServiceContract_InsertAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/InsertAppointmentResponse" message="tns:IEmployeeRegistrationServiceContract_InsertAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetAppointments" message="tns:IEmployeeRegistrationServiceContract_GetAppointments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetAppointmentsResponse" message="tns:IEmployeeRegistrationServiceContract_GetAppointments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerBySearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetCustomerBySearch" message="tns:IEmployeeRegistrationServiceContract_GetCustomerBySearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetCustomerBySearchResponse" message="tns:IEmployeeRegistrationServiceContract_GetCustomerBySearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Upload_Diary_Entry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/Upload_Diary_Entry" message="tns:IEmployeeRegistrationServiceContract_Upload_Diary_Entry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/Upload_Diary_EntryResponse" message="tns:IEmployeeRegistrationServiceContract_Upload_Diary_Entry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoad_Diary_Entry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/DownLoad_Diary_Entry" message="tns:IEmployeeRegistrationServiceContract_DownLoad_Diary_Entry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/DownLoad_Diary_EntryResponse" message="tns:IEmployeeRegistrationServiceContract_DownLoad_Diary_Entry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLead">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetLead" message="tns:IEmployeeRegistrationServiceContract_GetLead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeRegistrationServiceContract/GetLeadResponse" message="tns:IEmployeeRegistrationServiceContract_GetLead_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEmployeeRegistrationServiceContract" type="tns:IEmployeeRegistrationServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AuthenticateEmployeeLogin">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/AuthenticateEmployeeLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLead">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/CreateLead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAppointment">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/InsertAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointments">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/GetAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerBySearch">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/GetCustomerBySearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upload_Diary_Entry">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/Upload_Diary_Entry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoad_Diary_Entry">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/DownLoad_Diary_Entry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLead">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeRegistrationServiceContract/GetLead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployeeRegistrationService">
+    <wsdl:port name="BasicHttpBinding_IEmployeeRegistrationServiceContract" binding="tns:BasicHttpBinding_IEmployeeRegistrationServiceContract">
+      <soap:address location="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

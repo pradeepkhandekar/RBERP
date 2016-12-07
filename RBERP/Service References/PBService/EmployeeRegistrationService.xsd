@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://indirect.landmarkinsurance.in/EmployeeAppService/EmployeeRegistrationService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Landmark.Indirect.DataLogicLayer" />
+  <xs:element name="AuthenticateEmployeeLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateEmployeeLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticateEmployeeLoginResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OwnerTypeID" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CityID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PinCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+        <xs:element minOccurs="0" name="ReferredBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Landmark.Indirect.DataLogicLayer" minOccurs="0" name="arrContacts" nillable="true" type="q1:ArrayOfContacts" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLeadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateLeadResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsNewAppointment" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Agenda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ScheduleDateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LeadID" type="xs:long" />
+        <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+        <xs:element minOccurs="0" name="Contact" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AppointmentNote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Appointment_ID" type="xs:long" />
+        <xs:element minOccurs="0" name="ProductID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAppointmentResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppointments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAppointmentsResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerBySearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FromAge" type="xs:int" />
+        <xs:element minOccurs="0" name="ToAge" type="xs:int" />
+        <xs:element minOccurs="0" name="FromIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="ToIncome" type="xs:double" />
+        <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CityID" type="xs:int" />
+        <xs:element minOccurs="0" name="FromNoOfKids" type="xs:int" />
+        <xs:element minOccurs="0" name="ToNoOfKids" type="xs:int" />
+        <xs:element minOccurs="0" name="Designation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Variant_ID" type="xs:short" />
+        <xs:element minOccurs="0" name="FromRenewalDates" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ToRenewalDates" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FromPremiumAmount" type="xs:double" />
+        <xs:element minOccurs="0" name="ToPremiumAmount" type="xs:double" />
+        <xs:element minOccurs="0" name="CurrentInsurer" type="xs:short" />
+        <xs:element minOccurs="0" name="ClaimRegistered" type="xs:boolean" />
+        <xs:element minOccurs="0" name="FromNumberOfPolicies" type="xs:int" />
+        <xs:element minOccurs="0" name="ToNumberOfPolicies" type="xs:int" />
+        <xs:element minOccurs="0" name="Persistency" type="xs:boolean" />
+        <xs:element minOccurs="0" name="IsPolicySoldLastMonth" type="xs:boolean" />
+        <xs:element minOccurs="0" name="IsPolicySoldLastQuarter" type="xs:boolean" />
+        <xs:element minOccurs="0" name="IsPolicySoldLastYear" type="xs:boolean" />
+        <xs:element minOccurs="0" name="IsExpire" type="xs:boolean" />
+        <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+        <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SearchLeadType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerBySearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerBySearchResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Upload_Diary_Entry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Lead_ID" type="xs:long" />
+        <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Status_ID" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="Callback_Time" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />
+        <xs:element minOccurs="0" name="Appointment_ID" type="xs:long" />
+        <xs:element minOccurs="0" name="IsChequeCollected" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ChequeScanCopy" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="FileExtension" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Upload_Diary_EntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Upload_Diary_EntryResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownLoad_Diary_Entry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownLoad_Diary_EntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DownLoad_Diary_EntryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LeadID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLeadResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
